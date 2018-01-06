@@ -1,0 +1,2 @@
+# Poselib2Morph
+ポーズライブラリのポーズリストを一気にモーフに焼き付けるアドオン:Poselib2Morph
