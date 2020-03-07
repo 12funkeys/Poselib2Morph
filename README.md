@@ -5,7 +5,7 @@
 フェイシャルボーンで表情を作成してポーズライブラリに保存し、shape keyに変換したい時に便利です。
 
 ## Requirements（使用条件）
-* Blender 2.79+
+* Blender 2.81+
 
 
 ## Usage（使い方）
@@ -22,4 +22,4 @@
 [MIT licenses](https://opensource.org/licenses/mit-license.php)
 
 ## Bugs
-* 
+*
