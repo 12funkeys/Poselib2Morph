@@ -44,11 +44,12 @@ class P2M_OT_converter(bpy.types.Operator):
                 for i,x in enumerate(posemaker):
                     #print (i,x.name,m.name,mObj)
                     bpy.context.view_layer.objects.active = mObj
+                    bpy.ops.object.mode_set(mode='POSE')
                     bpy.ops.pose.select_all(action='SELECT')
                     bpy.ops.poselib.apply_pose(pose_index=i)
                     bpy.context.view_layer.objects.active = ab
                     bpy.context.object.modifiers[mName].name = x.name
-                    bpy.ops.object.modifier_apply(apply_as='SHAPE', modifier=x.name)
+                    bpy.ops.object.modifier_apply_as_shapekey(modifier=x.name)
                     newmod = ab.modifiers.new(mName,"ARMATURE")
                     newmod.object = mObj
 
